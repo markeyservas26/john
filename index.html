@@ -684,9 +684,12 @@
     <script src="assets/js/johndoe.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1200, // controls the animation duration
+            once: true      // animations only happen once as you scroll down
+        });
+    </script>
 </body>
 </html>
